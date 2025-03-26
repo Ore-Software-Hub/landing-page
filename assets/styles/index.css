@@ -6,6 +6,10 @@
   --font-display: "Oxanium", "sans-serif";
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a:hover {
   color: var(--color-fire);
 }
@@ -78,7 +82,7 @@ body {
   display: none;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.466);
+  background-color: rgba(0, 0, 0, 0.712);
   flex-direction: column;
   justify-content: center;
   align-items: center;
