@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap");
 
 :root {
-  --color-charcoal: #0f0e11;
-  --color-fire: #ff5400;
+  --color-brillian-black: #1f1f1f;
+  --color-cyber-yellow: #ffd300;
+  --color-quick-silver: #a6a6a6;
   --font-display: "Oxanium", "sans-serif";
 }
 
@@ -11,13 +12,17 @@ html {
 }
 
 a:hover {
-  color: var(--color-fire);
+  color: var(--color-cyber-yellow);
+}
+
+.subtitle {
+  color: var(--color-quick-silver);
 }
 
 .btn,
 button {
   font-family: var(--font-display);
-  background-color: var(--color-charcoal);
+  background-color: var(--color-brillian-black);
   color: white;
   border-radius: 5px;
   padding: 10px 20px;
@@ -27,25 +32,25 @@ button {
 
 .btn:hover,
 button:hover {
-  background-color: var(--color-fire);
-  color: white;
+  background-color: var(--color-cyber-yellow);
+  color: var(--color-brillian-black);
 }
 
 .flag {
-  background-color: var(--color-charcoal);
+  background-color: var(--color-brillian-black);
   padding: 5px 15px;
   border-radius: 10px;
 }
 
 .flag2 {
   background-color: white;
-  color: var(--color-charcoal);
+  color: var(--color-brillian-black);
   padding: 5px 15px;
   border-radius: 10px;
 }
 
 body {
-  background-color: var(--color-charcoal);
+  background-color: var(--color-brillian-black);
 }
 
 .card-list {
@@ -116,7 +121,8 @@ body {
     padding: 10px;
     font-size: 30px;
     border-radius: 50%;
-    background-color: var(--color-fire);
+    background-color: var(--color-cyber-yellow);
+    color: var(--color-brillian-black);
     display: flex;
     justify-content: center;
     align-items: center;
