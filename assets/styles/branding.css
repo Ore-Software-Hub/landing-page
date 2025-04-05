@@ -2,7 +2,7 @@
 
 :root {
   --color-brillian-black: #1f1f1f;
-  --color-cyber-yellow: #ffd300;
+  --color-cyber-yellow: #ffc300;
   --color-quick-silver: #a6a6a6;
   --font-display: "Oxanium", "sans-serif";
 }
@@ -33,20 +33,24 @@ button:hover {
 }
 
 body {
-  background-color: black;
-  background-image: url("../img/gradient.png");
   background-repeat: no-repeat;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 70%,
+    rgba(255, 195, 0, 1) 100%
+  );
   background-size: 100%;
+  /* height: 100vh; */
+  padding: 0 10%;
 }
 
 .hero {
-  height: 100vh;
   & .title {
-    font-size: 8em;
+    font-size: 6em;
     font-weight: 900;
   }
   & .subtitle {
-    font-size: 2.5em;
+    font-size: 1.5em;
     margin-bottom: 30px;
   }
 }
