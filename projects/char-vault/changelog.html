@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Characters Vault</title>
-    <!-- Favicons -->
+    <meta charset="utf-8" />
+    <title>Characters Vault - Changelog</title>
     <link href="images/favico.png" rel="icon" />
     <link href="images/favico.png" rel="apple-touch-icon" />
     <link
@@ -14,17 +13,12 @@
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-      crossorigin="anonymous"
     />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
-      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
-      crossorigin="anonymous"
     />
-    <!-- Font Google -->
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"
       rel="stylesheet"
@@ -44,9 +38,6 @@
           type="button"
           data-toggle="collapse"
           data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
         >
           <span class="fas fa-bars"></span>
         </button>
@@ -81,14 +72,14 @@
       </div>
     </nav>
     <!-- End Navbar -->
-    <!-------Banner Start------->
+
     <section class="banner">
       <div class="banner-overlay">
         <div class="container">
           <div class="row">
             <div class="col-md-8 col-sm-12">
               <div class="banner-text">
-                <h2 class="white">Segurança da conta</h2>
+                <h2 class="white">Changelog</h2>
               </div>
             </div>
           </div>
@@ -96,41 +87,45 @@
       </div>
     </section>
 
-    <!-------Banner End------->
-
-    <!-------About End------->
-
     <section class="about section-padding prelative">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="sectioner-header mb-5">
-              <h3>Alteração de senha</h3>
               <p>
-                Esqueceu sua senha? Dentro do aplicativo é possível solicitar
-                uma recuperação de senha!
+                Todas as mudanças notáveis deste projeto serão documentadas
+                nesta página.
               </p>
               <span class="line"></span>
             </div>
 
-            <div class="sectioner-header mb-5">
-              <h3>Exclusão de conta</h3>
-              <p>
-                Deseja remover a sua conta no Characters Vault? é possível
-                solicitar a exclusão da conta dentro do aplicativo.
-              </p>
+            <div class="sectioner-header mb-4">
+              <h3>[0.1.0] - Não documentado</h3>
+
+              <h5 class="mt-4">Adicionado</h5>
+              <ul>
+                <li>Lançamento inicial do app Characters Vault.</li>
+                <li>Cadastro e login com e-mail/senha.</li>
+                <li>
+                  Tela de edição de perfil com opção de editar avatar, nome e
+                  email.
+                </li>
+                <li>Listagem de personagens com Adição e Remoção.</li>
+                <li>Acesso aos dados do personagem.</li>
+                <li>Acesso à tela de Rolagem de Dados.</li>
+              </ul>
               <span class="line"></span>
             </div>
+
+            <p class="text-center">
+              Última atualização: <strong>08 de Abril de 2025</strong>.
+            </p>
           </div>
         </div>
       </div>
     </section>
-    <!-------About End------->
 
-    <footer
-      class="banner text-center white p-3"
-      style="position: absolute; bottom: 0; left: 0; right: 0"
-    >
+    <footer class="banner text-center white p-3">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12">
@@ -141,13 +136,8 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
-      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <!-- scrollIt js -->
     <script src="js/scrollIt.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script>
@@ -166,6 +156,7 @@
           navbar.removeClass("nav-scroll");
         }
       });
+
       $(window).on("load", function () {
         var bodyScroll = $(window).scrollTop(),
           navbar = $(".navbar");
@@ -179,10 +170,10 @@
         }
 
         $.scrollIt({
-          easing: "swing", // the easing function for animation
-          scrollTime: 900, // how long (in ms) the animation takes
-          activeClass: "active", // class given to the active nav element
-          onPageChange: null, // function(pageIndex) that is called when page is changed
+          easing: "swing",
+          scrollTime: 900,
+          activeClass: "active",
+          onPageChange: null,
           topOffset: -63,
         });
       });
