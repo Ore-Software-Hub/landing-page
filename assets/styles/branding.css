@@ -1,24 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap");
-
-:root {
-  --color-brillian-black: #1f1f1f;
-  --color-cyber-yellow: #ffc300;
-  --color-quick-silver: #a6a6a6;
-  --font-display: "Oxanium", "sans-serif";
-}
+@import url("./color.css");
 
 html {
   scroll-behavior: smooth;
 }
 
 a:hover {
-  color: var(--color-cyber-yellow);
+  color: var(--color-aerospace-orange);
 }
 
 .btn,
 button {
   font-family: var(--font-display);
-  background-color: var(--color-brillian-black);
+  background-color: var(--color-brilliant-black);
   color: white;
   border-radius: 5px;
   padding: 10px 20px;
@@ -28,8 +22,8 @@ button {
 
 .btn:hover,
 button:hover {
-  background-color: var(--color-cyber-yellow);
-  color: var(--color-brillian-black);
+  background-color: var(--color-aerospace-orange);
+  color: white
 }
 
 body {
@@ -37,7 +31,7 @@ body {
   background: linear-gradient(
     0deg,
     rgba(0, 0, 0, 1) 70%,
-    rgba(255, 195, 0, 1) 100%
+    var(--color-aerospace-orange)
   );
   background-size: 100%;
   /* height: 100vh; */
@@ -75,7 +69,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 100px 50px;
-  background-color: var(--color-brillian-black);
+  background-color: var(--color-brilliant-black);
   border-radius: 20px;
 }
 
@@ -91,14 +85,14 @@ body {
 }
 
 .asset-color-banner-primary {
-  background-color: var(--color-cyber-yellow);
-  color: var(--color-brillian-black);
+  background-color: var(--color-aerospace-orange);
+  color: white
 }
 .asset-color-banner-light {
   background-color: var(--color-quick-silver);
-  color: var(--color-brillian-black);
+  color: var(--color-brilliant-black);
 }
 .asset-color-banner-dark {
-  background-color: var(--color-brillian-black);
+  background-color: var(--color-brilliant-black);
   color: white;
 }
