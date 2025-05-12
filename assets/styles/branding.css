@@ -5,6 +5,14 @@ html {
   scroll-behavior: smooth;
 }
 
+#index-header {
+  display: none;
+}
+
+#branding-header {
+  display: block;
+}
+
 a:hover {
   color: var(--color-aerospace-orange);
 }
@@ -23,7 +31,7 @@ button {
 .btn:hover,
 button:hover {
   background-color: var(--color-aerospace-orange);
-  color: white
+  color: white;
 }
 
 body {
@@ -58,10 +66,6 @@ body {
   font-size: 1.3em;
 }
 
-.gray {
-  color: var(--color-quick-silver);
-}
-
 .asset-banner,
 .asset-color-banner {
   width: 100%;
@@ -86,7 +90,7 @@ body {
 
 .asset-color-banner-primary {
   background-color: var(--color-aerospace-orange);
-  color: white
+  color: white;
 }
 .asset-color-banner-light {
   background-color: var(--color-quick-silver);

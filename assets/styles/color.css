@@ -1,6 +1,10 @@
 :root {
-    --color-brilliant-black: #1f1f1f;
-    --color-aerospace-orange: #FF4F00;
-    --color-quick-silver: #a6a6a6;
-    --font-display: "Oxanium", "sans-serif";
-  }
+  --color-brilliant-black: #1f1f1f;
+  --color-aerospace-orange: #ff4f00;
+  --color-quick-silver: #a6a6a6;
+  --font-display: "Oxanium", "sans-serif";
+}
+
+.gray {
+  color: var(--color-quick-silver);
+}

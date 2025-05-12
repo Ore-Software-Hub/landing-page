@@ -13,18 +13,8 @@
     <link rel="shortcut icon" href="assets/img/ORE.svg" type="image/x-icon" />
   </head>
   <body class="text-white relative">
-    <header class="px-[100px] py-10 bg-transparent sticky top-0 z-50">
-      <nav class="flex items-center justify-between flex-wrap">
-        <a href="">
-          <img src="assets/img/ORE.svg" alt="Ore Software logo" width="75" />
-        </a>
-        <div class="flex gap-5 flex-wrap justify-center">
-          <a class="hover:underline" href="#">Início</a>
-          <a class="hover:underline" href="#about">Sobre</a>
-          <a class="hover:underline" href="#contact">Contato</a>
-        </div>
-      </nav>
-    </header>
+    
+    <div id="header"></div>
 
     <main class="flex flex-col gap-11">
       <section
@@ -205,65 +195,17 @@
       </section>
     </main>
 
-    <footer
-      class="px-[200px] flex md:flex-col justify-center items-center text-center md:text-left"
-    >
-      <section class="p-10 flex justify-between w-full">
-        <div class="flex flex-col gap-5">
-          <img src="assets/img/ORE.svg" alt="Ore Software logo" width="100" />
-          <div class="flex flex-col">
-            <p class="subtitle">Social</p>
-            <a
-              class="hover:underline"
-              target="_blank"
-              href="https://x.com/softwareore"
-              >Twitter</a
-            >
-            <a class="hover:underline" target="_blank" href="">Github</a>
-          </div>
-        </div>
-        <div class="flex gap-[50px]">
-          <div class="flex">
-            <div class="flex flex-col">
-              <p class="subtitle">Empresa</p>
-              <a class="hover:underline" href="#about">Sobre</a>
-              <a class="hover:underline" href="">Equipe</a>
-              <a class="hover:underline" href="">Carreiras</a>
-              <a class="hover:underline" href="/landing-page/branding.html"
-                >Marca</a
-              >
-            </div>
-          </div>
-          <div class="flex">
-            <div class="flex flex-col">
-              <p class="subtitle">Política</p>
-              <a class="hover:underline" href="">Termos</a>
-              <a class="hover:underline" href="">Privacidade</a>
-              <a class="hover:underline" href="">Cookies</a>
-            </div>
-          </div>
-          <div class="flex">
-            <div class="flex flex-col">
-              <p class="subtitle">Ecossistema Ore</p>
-              <a class="hover:underline" target="_blank" href="">Ore Labs</a>
-              <a class="hover:underline" target="_blank" href="">Ore Studios</a>
-            </div>
-          </div>
-          <div class="flex">
-            <div class="flex flex-col">
-              <p class="subtitle">Suporte</p>
-              <a class="hover:underline" href="">FAQ</a>
-              <a class="hover:underline" href="">Status do Sistema</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <img
-        src="assets/img/logo_color.svg"
-        alt="Ore Software logo"
-        class="w-full p-10"
-      />
-    </footer>
+    <div id="footer"></div>
+
+    <script>
+      fetch("./assets/modules/header.html")
+        .then((res) => res.text())
+        .then((html) => (document.getElementById("header").innerHTML = html));
+
+      fetch("./assets/modules/footer.html")
+        .then((res) => res.text())
+        .then((html) => (document.getElementById("footer").innerHTML = html));
+    </script>
 
     <script src="assets/js/contact.js"></script>
   </body>

@@ -5,6 +5,14 @@ html {
   scroll-behavior: smooth;
 }
 
+#index-header {
+  display: block;
+}
+
+#branding-header {
+  display: none;
+}
+
 a:hover {
   color: var(--color-aerospace-orange);
 }
@@ -27,7 +35,7 @@ button {
 .btn:hover,
 button:hover {
   background-color: var(--color-aerospace-orange);
-  color: white
+  color: white;
 }
 
 .flag {
@@ -136,4 +144,8 @@ body {
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
+}
+
+#footer{
+  padding: 50px;
 }
