@@ -5,6 +5,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: var(--color-brilliant-black);
+}
+
 #index-header {
   display: block;
 }
@@ -51,9 +55,6 @@ button:hover {
   border-radius: 10px;
 }
 
-body {
-  background-color: var(--color-brilliant-black);
-}
 
 .card-list {
   display: flex;
