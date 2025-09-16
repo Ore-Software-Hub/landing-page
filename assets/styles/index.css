@@ -17,8 +17,28 @@ body {
   display: none;
 }
 
+a {
+  transition: 0.3s;
+  position: relative;
+}
+
 a:hover {
   color: var(--color-aerospace-orange);
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background-color: var(--color-aerospace-orange);
+  transition: width 0.3s ease;
+}
+
+a:hover::after {
+  width: 100%;
 }
 
 .subtitle {
@@ -54,7 +74,6 @@ button:hover {
   padding: 5px 15px;
   border-radius: 10px;
 }
-
 
 .card-list {
   display: flex;
@@ -147,6 +166,6 @@ button:hover {
   }
 }
 
-#footer{
+#footer {
   padding: 50px;
 }
