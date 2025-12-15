@@ -23,7 +23,7 @@ a {
 }
 
 a:hover {
-  color: var(--color-aerospace-orange);
+  color: var(--color-software);
 }
 
 a::after {
@@ -33,12 +33,37 @@ a::after {
   bottom: 0;
   height: 2px;
   width: 0%;
-  background-color: var(--color-aerospace-orange);
+  background-color: var(--color-software);
   transition: width 0.3s ease;
 }
 
 a:hover::after {
   width: 100%;
+}
+
+.link-labs:hover {
+  color: var(--color-labs);
+}
+
+.link-labs::after {
+  background-color: var(--color-labs);
+}
+
+.link-studios:hover {
+  color: var(--color-studios);
+}
+
+.link-studios::after {
+  background-color: var(--color-studios);
+}
+
+.disabled,
+.disabled:hover {
+  color: gray;
+}
+
+.disabled::after {
+  background-color: gray;
 }
 
 .subtitle {
@@ -58,7 +83,7 @@ button {
 
 .btn:hover,
 button:hover {
-  background-color: var(--color-aerospace-orange);
+  background-color: var(--color-software);
   color: white;
 }
 
@@ -143,7 +168,7 @@ button:hover {
     padding: 10px;
     font-size: 30px;
     border-radius: 50%;
-    background-color: var(--color-aerospace-orange);
+    background-color: var(--color-software);
     color: var(--color-brilliant-black);
     display: flex;
     justify-content: center;
@@ -168,4 +193,79 @@ button:hover {
 
 #footer {
   padding: 50px;
+}
+
+.ecosystem {
+  /* background-color: red; */
+  width: 500px;
+  height: 500px;
+  position: relative;
+}
+
+.ecosystem-item {
+  position: absolute;
+  width: 20%;
+}
+
+.ecosystem-item::after {
+  background-color: transparent;
+}
+
+.ecosystem-item-circle{
+  z-index: -1;
+  border: 1px solid gray;
+  width: 85%;
+  height: 85%;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.item-software {
+  top: 50%;
+  left: 50%;
+  width: 35%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.item-labs {
+  animation: rotate 50s linear infinite reverse;
+
+  top: 10%;
+  left: 10%;
+
+  & img {
+    border-radius: 50%;
+  }
+}
+
+.item-studios {
+  animation: rotate 50s linear infinite reverse;
+  bottom: 10%;
+  right: 10%;
+
+  & img {
+    border-radius: 50%;
+  }
+}
+
+
+.orbit {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: rotate 50s linear infinite;
+}
+
+/* ANIMAÇÃO */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
