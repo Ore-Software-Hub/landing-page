@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://oresoftware.net/sitemap.xml
+
+# Recommended: adjust crawl-delay or disallow paths if needed
